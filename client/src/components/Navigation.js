@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
@@ -42,31 +42,24 @@ const useStyles = makeStyles((theme) => ({
 
 export default function CenteredTabs() {
   const classes = useStyles();
-  const [value, setValue] = React.useState(0);
-
-  const handleChange = (event, newValue) => {
-    setValue(newValue);
-  };
 
   return (
     <Paper className={classes.paper}>
 
 
-      <Grid container spacing={3}>
+      <Grid container spacing={3} style={{justifyContent:"center"}}>
         <Grid className={classes.right} item lg={6}  >
-          <Link style={{padding: "20px"}} to="/" className={classes.navItems}>
+          <Link style={{padding: "20px", color: "green"}} to="/" className={classes.navItems}>
             HOME
           </Link>
         </Grid>
 
         <Grid className={classes.left} item lg={6}  >
-          <Link style={{padding: "20px"}} to="/contact" className={classes.navItems}>
+          <Link style={{padding: "20px", color: "green"}} to="/contact" className={classes.navItems}>
             CONTACT
           </Link>
         </Grid>
       </Grid>
-
-
     </Paper>
   );
 }

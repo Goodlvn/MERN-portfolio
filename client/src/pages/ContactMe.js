@@ -1,6 +1,8 @@
 import ProfilePicture from "../components/ProfilePicture";
 import Navigation from "../components/Navigation";
 
+import ContactCard from "../components/ContactCard";
+
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
@@ -40,7 +42,10 @@ export default function Home() {
         <div>
             <Navigation />
             <ProfilePicture />
-        
+
+            <h3>Let's get in touch!</h3>
+
+            <ContactCard />
 
             <Paper className={classes.paper}></Paper>
         </div>
