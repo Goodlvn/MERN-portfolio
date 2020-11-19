@@ -9,8 +9,9 @@ import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 
 // images import
-import roots from "../images/roots.png"
-import politics from "../images/connected.png"
+import roots from "../images/roots.png";
+import politics from "../images/connected.png";
+import burger from "../images/burger.png";
 
 
 const useStyles = makeStyles({
@@ -36,6 +37,9 @@ export default function ProjectCard(props) {
         case "politics":
             portfolioImage = politics;
             break;
+        case "burger":
+            portfolioImage = burger;
+            break;
     }
 
     return (
@@ -46,7 +50,7 @@ export default function ProjectCard(props) {
                     image={portfolioImage}
                     title="project image"
                 />
-                <CardContent style={{marginBottom:"50px"}}>
+                <CardContent style={{ marginBottom: "50px" }}>
                     <Typography gutterBottom variant="h5" component="h2">
                         {props.title}
                     </Typography>
@@ -55,7 +59,7 @@ export default function ProjectCard(props) {
                     </Typography>
                 </CardContent>
             </CardActionArea>
-            <CardActions style={{position:"absolute", bottom:"0"}}>
+            <CardActions style={{ position: "absolute", bottom: "0" }}>
                 <Button size="small" color="primary">
                     Deployed Link
                  </Button>
