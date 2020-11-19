@@ -22,6 +22,15 @@ const useStyles = makeStyles((theme) => ({
     },
     centerCard: {
         textAlign: "-webkit-center"
+    },
+    breakpoints: {
+        values: {
+          xs: 0,
+          sm: 600,
+          md: 960,
+          lg: 1280,
+          xl: 1920,
+        }
     }
 }));
 
@@ -35,24 +44,42 @@ export default function Home() {
             <TagBio />
 
             <div className={classes.gridContianer}>
-                <Grid container spacing={3}>
-                    <Grid className={classes.cardCenter} item xs={12} sm={6} md={4}>
-                        <ProjectCard />
+                <Grid container spacing={3} style={{justifyContent: "center"}}>
+                    <Grid className={classes.centerCard} item lg={4}  >
+                        <ProjectCard title={"Roots a social media garden"} 
+                        body={"A social media forum used for posting pictures of your plants and learning more through community interactivity. Project two for ucb full-stack web dev bootcamp: collaboration with Christy & Kelly"}
+                        image={"roots"}
+                        />
                     </Grid>
-                    <Grid className={classes.cardCenter} item xs={12} sm={6} md={4}>
-                        <ProjectCard />
+                    <Grid className={classes.centerCard} item lg={4}  >
+                        <ProjectCard title={"Roots a social media garden"} 
+                        body={"A social media forum used for posting pictures of your plants and learning more through community interactivity. Project two for ucb full-stack web dev bootcamp: collaboration with Christy & Kelly"}
+                        image={"roots"}
+                        />
                     </Grid>
-                    <Grid className={classes.cardCenter} item xs={12} sm={6} md={4}>
-                        <ProjectCard />
+                    <Grid className={classes.centerCard} item lg={4}  >
+                        <ProjectCard title={"Roots a social media garden"} 
+                        body={"A social media forum used for posting pictures of your plants and learning more through community interactivity. Project two for ucb full-stack web dev bootcamp: collaboration with Christy & Kelly"}
+                        image={"roots"}
+                        />
                     </Grid>
-                    <Grid className={classes.cardCenter} item xs={12} sm={6} md={4}>
-                        <ProjectCard />
+                    <Grid className={classes.centerCard} item lg={4}  >
+                        <ProjectCard title={"Roots a social media garden"} 
+                        body={"A social media forum used for posting pictures of your plants and learning more through community interactivity. Project two for ucb full-stack web dev bootcamp: collaboration with Christy & Kelly"}
+                        image={"roots"}
+                        />
                     </Grid>
-                    <Grid className={classes.cardCenter} item xs={12} sm={6} md={4}>
-                        <ProjectCard />
+                    <Grid className={classes.centerCard} item lg={4}  >
+                        <ProjectCard title={"Roots a social media garden"} 
+                        body={"A social media forum used for posting pictures of your plants and learning more through community interactivity. Project two for ucb full-stack web dev bootcamp: collaboration with Christy & Kelly"}
+                        image={"roots"}
+                        />
                     </Grid>
-                    <Grid className={classes.cardCenter} item xs={12} sm={6} md={4}>
-                        <ProjectCard />
+                    <Grid className={classes.centerCard} item lg={4}  >
+                        <ProjectCard title={"Roots a social media garden"} 
+                        body={"A social media forum used for posting pictures of your plants and learning more through community interactivity. Project two for ucb full-stack web dev bootcamp: collaboration with Christy & Kelly"}
+                        image={"roots"}
+                        />
                     </Grid>
                 </Grid>
             </div>
