@@ -16,9 +16,10 @@ const useStyles = makeStyles((theme) => ({
         marginTop: "50px"
     },
     paper: {
-        padding: theme.spacing(2),
+        padding: theme.spacing(3),
         textAlign: 'center',
         color: theme.palette.text.secondary,
+        marginTop: "50px"
     },
     centerCard: {
         textAlign: "-webkit-center"
@@ -83,6 +84,7 @@ export default function Home() {
                     </Grid>
                 </Grid>
             </div>
+            <Paper className={classes.paper}></Paper>
         </div>
     );
 }

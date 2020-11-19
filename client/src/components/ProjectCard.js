@@ -30,7 +30,6 @@ const useStyles = makeStyles({
 
 export default function ProjectCard(props) {
     const classes = useStyles();
-
     let portfolioImage = "";
 
     switch (props.image) {
