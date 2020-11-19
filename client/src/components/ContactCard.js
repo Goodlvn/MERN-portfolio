@@ -29,7 +29,7 @@ const useStyles = makeStyles({
         justifyContent: "center"
     },
     inputFields: {
-        
+        width: "100%"
     }
 });
 
@@ -43,16 +43,16 @@ export default function ContactCard() {
                 <form className={classes.root} noValidate autoComplete="off">
                 <Grid container spacing={3}>
                     <Grid item xs={6}>
-                        <TextField id="outlined-basic" label="Name" variant="outlined" />
+                        <TextField className={classes.inputFields} id="outlined-basic" label="Name" variant="outlined" />
                     </Grid>
                     <Grid item xs={6}>
-                        <TextField id="outlined-basic" label="Email" variant="outlined" />
+                        <TextField className={classes.inputFields} id="outlined-basic" label="Email" variant="outlined" />
                     </Grid>
                     <Grid item xs={12}>
-                        <TextField id="outlined-basic" label="Subject" variant="outlined" />
+                        <TextField className={classes.inputFields} id="outlined-basic" label="Subject" variant="outlined" />
                     </Grid>
                     <Grid item xs={12}>
-                        <TextField id="outlined-basic" label="message" variant="outlined" />
+                        <TextField className={classes.inputFields} id="outlined-basic" label="message" variant="outlined" />
                     </Grid>
                 </Grid>
                 </form>
