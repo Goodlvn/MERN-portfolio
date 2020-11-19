@@ -10,53 +10,59 @@ import Typography from '@material-ui/core/Typography';
 
 // images import
 import roots from "../images/roots.png"
+import politics from "../images/connected.png"
 
 
 const useStyles = makeStyles({
-  root: {
-    maxWidth: 345,
-  },
-  media: {
-    height: 140,
-  },
+    root: {
+        maxWidth: 345,
+        minHeight: "100%",
+        position: "relative"
+    },
+    media: {
+        height: 140,
+    },
 });
 
 export default function ProjectCard(props) {
-  const classes = useStyles();
+    const classes = useStyles();
 
-  let portfolioImage = "";
+    let portfolioImage = "";
 
-  switch(props.image){
-      case "roots":
-          portfolioImage = roots
-          break;
-  }
+    switch (props.image) {
+        case "roots":
+            portfolioImage = roots;
+            break;
+        case "politics":
+            portfolioImage = politics;
+            break;
+    }
 
-  return (
-    <Card className={classes.root}>
-      <CardActionArea>
-        <CardMedia
-          className={classes.media}
-          image={portfolioImage}
-          title="project image"
-        />
-        <CardContent>
-          <Typography gutterBottom variant="h5" component="h2">
-            {props.title}
-          </Typography>
-          <Typography variant="body2" color="textSecondary" component="p">
-            {props.body}
-          </Typography>
-        </CardContent>
-      </CardActionArea>
-      <CardActions>
-        <Button size="small" color="primary">
-          Deployed Link
-        </Button>
-        <Button size="small" color="primary">
-          GitHub Repo
-        </Button>
-      </CardActions>
-    </Card>
-  );
+    return (
+        <Card className={classes.root}>
+            <CardActionArea>
+                <CardMedia
+                    className={classes.media}
+                    image={portfolioImage}
+                    title="project image"
+                />
+                <CardContent style={{marginBottom:"50px"}}>
+                    <Typography gutterBottom variant="h5" component="h2">
+                        {props.title}
+                    </Typography>
+                    <Typography variant="body2" color="textSecondary" component="p">
+                        {props.body}
+                    </Typography>
+                </CardContent>
+            </CardActionArea>
+            <CardActions style={{position:"absolute", bottom:"0"}}>
+                <Button size="small" color="primary">
+                    Deployed Link
+                 </Button>
+                <Button size="small" color="primary">
+                    GitHub Repo
+                </Button>
+            </CardActions>
+        </Card>
+    );
 }

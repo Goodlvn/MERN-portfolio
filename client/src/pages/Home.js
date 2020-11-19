@@ -52,9 +52,9 @@ export default function Home() {
                         />
                     </Grid>
                     <Grid className={classes.centerCard} item lg={4}  >
-                        <ProjectCard title={"Roots a social media garden"} 
-                        body={"A social media forum used for posting pictures of your plants and learning more through community interactivity. Project two for ucb full-stack web dev bootcamp: collaboration with Christy & Kelly"}
-                        image={"roots"}
+                        <ProjectCard title={"Connected Politics"} 
+                        body={"An app to help you find elected your elected officials by address. Project one for ucb full-stacj web dev: collaboration with David & Ry."}
+                        image={"politics"}
                         />
                     </Grid>
                     <Grid className={classes.centerCard} item lg={4}  >
