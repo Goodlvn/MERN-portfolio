@@ -2,6 +2,7 @@ import ProfilePicture from "../components/ProfilePicture";
 import Navigation from "../components/Navigation";
 import TagBio from "../components/TagBio";
 import ProjectCard from "../components/ProjectCard";
+import Footer from "../components/Footer";
 
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
@@ -96,7 +97,7 @@ export default function Home() {
                     </Grid>
                 </Grid>
             </div>
-            <Paper className={classes.paper}></Paper>
+            <Footer />
         </div>
     );
 }

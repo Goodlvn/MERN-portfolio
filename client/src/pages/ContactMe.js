@@ -46,7 +46,6 @@ export default function Home() {
             <h3>Let's get in touch!</h3>
 
             <ContactCard />
-
             <Paper style={{position: "absolute", bottom: 0, width: "100vw"}} className={classes.paper}></Paper>
         </div>
     );
