@@ -18,7 +18,7 @@ const useStyles = makeStyles({
   },
 });
 
-export default function MediaCard() {
+export default function ProfilePicture() {
   const classes = useStyles();
 
   return (
