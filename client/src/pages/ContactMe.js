@@ -1,9 +1,8 @@
+import React from 'react';
 import ProfilePicture from "../components/ProfilePicture";
 import Navigation from "../components/Navigation";
-
 import ContactCard from "../components/ContactCard";
-
-import React from 'react';
+import Footer from "../components/Footer";
 import { makeStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
@@ -46,7 +45,8 @@ export default function Home() {
             <h3>Let's get in touch!</h3>
 
             <ContactCard />
-            <Paper style={{position: "absolute", bottom: 0, width: "100vw"}} className={classes.paper}></Paper>
+            {/* <Paper style={{position: "absolute", bottom: 0, width: "100vw"}} className={classes.paper}></Paper> */}
+            <Footer />
         </div>
     );
 }
