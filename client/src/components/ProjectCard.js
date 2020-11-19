@@ -12,6 +12,9 @@ import Typography from '@material-ui/core/Typography';
 import roots from "../images/roots.png";
 import politics from "../images/connected.png";
 import burger from "../images/burger.png";
+import reverse from "../images/reverse.png";
+import pump from "../images/fitness.png";
+import planner from "../images/planner.png";
 
 
 const useStyles = makeStyles({
@@ -40,6 +43,15 @@ export default function ProjectCard(props) {
         case "burger":
             portfolioImage = burger;
             break;
+        case "reverse":
+            portfolioImage = reverse;
+            break;
+        case "pump":
+            portfolioImage = pump;
+            break;
+        case "planner":
+            portfolioImage = planner;
+            break;
     }
 
     return (
@@ -61,7 +73,7 @@ export default function ProjectCard(props) {
             </CardActionArea>
             <CardActions style={{ position: "absolute", bottom: "0" }}>
                 <Button size="small" color="primary">
-                    Deployed Link
+                    Link
                  </Button>
                 <Button size="small" color="primary">
                     GitHub Repo

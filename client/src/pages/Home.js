@@ -64,21 +64,21 @@ export default function Home() {
                         />
                     </Grid>
                     <Grid className={classes.centerCard} item lg={4}  >
-                        <ProjectCard title={"Roots a social media garden"} 
-                        body={"A social media forum used for posting pictures of your plants and learning more through community interactivity. Project two for ucb full-stack web dev bootcamp: collaboration with Christy & Kelly"}
-                        image={"roots"}
+                        <ProjectCard title={"Reverse Uno Code"} 
+                        body={"Home work assignment meant to teach us about sequelize models and how to require them in future projects. Also learned about user authentication using Passport and Bycript for password encryption. Check out my youtube video!"}
+                        image={"reverse"}
                         />
                     </Grid>
                     <Grid className={classes.centerCard} item lg={4}  >
-                        <ProjectCard title={"Roots a social media garden"} 
-                        body={"A social media forum used for posting pictures of your plants and learning more through community interactivity. Project two for ucb full-stack web dev bootcamp: collaboration with Christy & Kelly"}
-                        image={"roots"}
+                        <ProjectCard title={"Fitness Tracker"} 
+                        body={"This fitness tracker app is designed to help you keep track of your workouts! Create a new workout plan and add exercises as you go through it. Check the stats of your work outs to see the progress that you've made!"}
+                        image={"pump"}
                         />
                     </Grid>
                     <Grid className={classes.centerCard} item lg={4}  >
-                        <ProjectCard title={"Roots a social media garden"} 
-                        body={"A social media forum used for posting pictures of your plants and learning more through community interactivity. Project two for ucb full-stack web dev bootcamp: collaboration with Christy & Kelly"}
-                        image={"roots"}
+                        <ProjectCard title={"Work Day Scheduler"} 
+                        body={"A simple app that uses momentjs to help you keep track of your schedule for a typical work day"}
+                        image={"planner"}
                         />
                     </Grid>
                 </Grid>
