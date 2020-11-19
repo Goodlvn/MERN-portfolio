@@ -17,6 +17,23 @@ app.get("/messages", (req, res) => {
         .then((data) => res.send(data));
 });
 
+app.post("/messages", (req, res) => {
+    Contact.create({
+        subject: req.body.subject,
+        name:req.body.name,
+        email: req.body.email,
+        message: req.body.message
+    })
+    .then(data => res.send(data))
+})
+
+// {
+//     "subject":"this is a postman test",
+//     "name":"John Smith",
+//     "email":"john@john.com",
+//     "message":"Hi I wanted to ask if you would be able to build a website for me!"
+// }
+
 mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/jdsworld", 
 { useNewUrlParser: true, useUnifiedTopology: true }
 );
