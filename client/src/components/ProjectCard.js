@@ -71,10 +71,10 @@ export default function ProjectCard(props) {
                 </CardContent>
             </CardActionArea>
             <CardActions style={{ position: "absolute", bottom: "0" }}>
-                <Button size="small" color="primary">
+                <Button size="small" color="primary" href={props.link} target="_blank">
                     Link
                  </Button>
-                <Button size="small" color="primary">
+                <Button size="small" color="primary" href={props.repo} target="_blank">
                     GitHub Repo
                 </Button>
             </CardActions>
